@@ -1,0 +1,174 @@
+/* .calendar-container {
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+}
+
+::ng-deep .mat-calendar-body-cell {
+    padding-bottom: 10px !important;
+}
+
+::ng-deep .date-with-dot {
+    position: relative;
+}
+
+::ng-deep .date-with-dot:after {
+    background-color: red;
+    border-radius: 50%;
+    bottom: 0px;
+    content: '';
+    height: 5px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 5px;
+} */
+
+
+
+/* Calendar container styles */
+.calendar-container {
+    padding: 24px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 420px;
+    max-width: 100%;
+}
+
+/* Calendar body cell styles */
+::ng-deep .mat-calendar-body-cell {
+    padding-bottom: 14px !important;
+    font-size: 15px;
+    color: #4a4a4a;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+/* Styles for dates with appointments */
+::ng-deep .date-with-dot {
+    position: relative;
+}
+
+::ng-deep .date-with-dot:after {
+    background-color: #ee380a;
+    border-radius: 50%;
+    bottom: 4px;
+    content: '';
+    height: 6px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 6px;
+}
+
+/* Calendar header styles */
+::ng-deep .mat-calendar-header {
+    background-color: #f0f4f8;
+    border-radius: 12px 12px 0 0;
+    padding: 20px;
+    color: #2c3e50;
+}
+
+/* Period selection button styles */
+::ng-deep .mat-calendar-period-button {
+    background-color: #3498db;
+    color: white;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(52, 152, 219, 0.2);
+}
+
+::ng-deep .mat-calendar-period-button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+/* Calendar cell hover effect */
+::ng-deep .mat-calendar-body-cell:hover {
+    background-color: #e8f4fd;
+    cursor: pointer;
+}
+
+/* Today's date highlight */
+::ng-deep .mat-calendar-body-today {
+    background-color: #e8f4fd;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #3498db;
+}
+
+/* Calendar border styling */
+::ng-deep .mat-calendar {
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+/* Arrow buttons styling */
+::ng-deep .mat-calendar-previous-button,
+::ng-deep .mat-calendar-next-button {
+    color: #3498db;
+}
+
+/* Selected date styling */
+::ng-deep .mat-calendar-body-selected {
+    background-color: #3498db;
+    color: white;
+}
+
+/* Weekday headers styling */
+::ng-deep .mat-calendar-table-header {
+    color: #7f8c8d;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+/* Disabled date styling */
+::ng-deep .mat-calendar-body-disabled > .mat-calendar-body-cell-content {
+    color: #bdc3c7;
+}
+
+/* Month/year selection panel */
+::ng-deep .mat-calendar-controls {
+    margin: 5% 0 3% 0;
+}
+
+::ng-deep .mat-calendar-arrow {
+    fill: #3498db;
+}
+
+/* Year selection in multi-year view */
+::ng-deep .mat-calendar-body-year-name {
+    font-size: 14px;
+    color: #2c3e50;
+}
+
+/* Hover effect for year selection */
+::ng-deep .mat-calendar-body-year-name:hover {
+    background-color: #e8f4fd;
+    border-radius: 8px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 480px) {
+    .calendar-container {
+        width: 100%;
+        padding: 16px;
+    }
+
+    ::ng-deep .mat-calendar-period-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    ::ng-deep .mat-calendar-body-cell {
+        font-size: 14px;
+    }
+}
